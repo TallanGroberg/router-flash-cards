@@ -6,22 +6,28 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import NoMatch from './components/NoMatch'
 
+import Deck from './flashcards/Deck';
 import Cards from './flashcards/Cards';
 
+
 class App extends React.Component {
+
+
   render() {
     return (
       <>
 
       <Navbar />
+
         <Container style={{ marginTop: "25px", }}>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
-              <Route exact path="/cards" component={Cards} />
+              <Route exact path="/deck" component={Deck} />
                 <Route component={NoMatch} />
             </Switch>
         </Container>
+
       </>
       )
   }

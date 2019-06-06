@@ -15,9 +15,9 @@ const Navbar = () => (
         About
       </Menu.Item>
     </Link>
-    <Link to="/cards">
+    <Link to="/deck">
       <Menu.Item>
-        Cards
+        Flash Cards
       </Menu.Item>
     </Link>
 
