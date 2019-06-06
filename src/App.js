@@ -6,6 +6,8 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import NoMatch from './components/NoMatch'
 
+import Cards from './flashcards/Cards';
+
 class App extends React.Component {
   render() {
     return (
@@ -16,7 +18,8 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
-              <Route component={NoMatch} />
+              <Route exact path="/cards" component={Cards} />
+                <Route component={NoMatch} />
             </Switch>
         </Container>
       </>

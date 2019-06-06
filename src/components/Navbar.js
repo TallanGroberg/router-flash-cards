@@ -15,6 +15,12 @@ const Navbar = () => (
         About
       </Menu.Item>
     </Link>
+    <Link to="/cards">
+      <Menu.Item>
+        Cards
+      </Menu.Item>
+    </Link>
+
   </Menu>
 
 );
