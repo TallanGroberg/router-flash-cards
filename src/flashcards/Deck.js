@@ -13,7 +13,10 @@ class Deck extends React.Component {
 
   render() {
     return (
+      <>
       <Cards />
+      
+      </>
     )
   };
 }
